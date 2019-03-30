@@ -1,0 +1,6 @@
+1. Open the terminal in the directory.
+2. Use "make" command to make the file.
+3. Type "sudo insmod dorb.ko" to insert the module.
+4. Type "sudo fdisk -l /dev/dof" to view the partition details of the disk dof.
+5. Type "sudo dd if=sample.txt of=/dev/dof count=1" to copy the contents of the sample.txt file into the disk.
+6. View the contents of the file using "sudo cat /dev/dof".
