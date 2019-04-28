@@ -1,0 +1,21 @@
+
+	Insert the linux kernel headers using the command "sudo apt-get install linux-headers-$(uname -r)".
+   
+	Download the gyro.c ,script.py and Makefile
+
+    Go to the directory in which code is downloaded and give the command $ make all
+
+    Insert the module using sudo "insmod gyro.ko"
+
+    Check if module is loaded using "lsmod" command
+
+	Exit from current terminal and open a new terminal
+
+	Check the kernel log using "dmesg -wH"
+	
+	Run the user space python script using the command "sudo python script.py"
+
+    The angular acceleration rates in hex format is displayed as [X axis, Y axis, Z axis].
+
+    Remove the module using sudo rmmod gyro.ko
+
